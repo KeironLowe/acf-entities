@@ -1,0 +1,21 @@
+{
+    "name": "keironlowe/acf-entities",
+    "description": "Simple helper objects for your ACF field data",
+    "type": "library",
+    "require": {
+        "spatie/data-transfer-object": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Keiron Lowe",
+            "email": "keiron@keironlowe.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "ACFEntities\\": ["src"]
+        }
+    }
+}
