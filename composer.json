@@ -3,6 +3,7 @@
     "description": "Simple helper objects for your ACF field data",
     "type": "library",
     "require": {
+        "php": ">=7.4.0",
         "spatie/data-transfer-object": "dev-master"
     },
     "license": "MIT",
