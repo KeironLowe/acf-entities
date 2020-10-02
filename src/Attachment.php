@@ -25,8 +25,6 @@ class Attachment extends FlexibleDataTransferObject
     public string $mime_type;
     public string $type;
     public string $subtype;
-    public int $width;
-    public int $height;
 
     /**
      * Returns a new instance with the field data.
@@ -115,27 +113,5 @@ class Attachment extends FlexibleDataTransferObject
         }
 
         return $this->modified;
-    }
-
-    /**
-     * Returns the width of the image, optionally the width of a resize.
-     *
-     * @param string|null $size
-     * @return int|null
-     */
-    public function getWidth(string $size = null): ?int
-    {
-        return $this->width;
-    }
-
-    /**
-     * Returns the height of the image, optionally the height of a resize.
-     *
-     * @param string|null $size
-     * @return int|null
-     */
-    public function getHeight(string $size = null): ?int
-    {
-        return $this->height;
     }
 }
