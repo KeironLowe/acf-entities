@@ -14,11 +14,11 @@ class Link extends FlexibleDataTransferObject
      * Returns a new instance with the field data.
      *
      * @param string   $fieldName
-     * @param int|null $postId
+     * @param int|string|null $postId
      * @return static|null
      * @noinspection CallableParameterUseCaseInTypeContextInspection
      */
-    public static function createFromField(string $fieldName, int $postId = null): ?Link
+    public static function createFromField(string $fieldName, $postId = null): ?Link
     {
         $postId = $postId ?? get_the_ID();
 
